@@ -1,0 +1,74 @@
+ProductID;ProductName;SupplierID;CategoryID;StateID;Price
+1;La Gioconda;1;1;2;45112
+2;Las Meninas;2;1;2;37111
+3;Guernica;3;1;2;48056
+4;La Noche Estrellada;4;1;2;47417
+5;La Última Cena;5;1;2;12107
+6;La Creación de Adán;6;1;1;1146
+7;La Persistencia de la Memoria;7;1;1;14425
+8;David;8;2;2;47326
+9;Loba capitolina;9;2;1;2650
+10;Victoria alada de Samotracia;10;2;1;7689
+11;La Piedad;11;2;1;38502
+12;El beso de Rodin;12;2;2;31182
+13;Venus de Milo;13;2;2;648
+14;El elefante;14;3;1;30096
+15;Grulla;15;3;1;33435
+16;Violín;16;3;1;43420
+17;Mamut;17;3;2;2689
+18;Esqueleto de sarcosuchus;18;3;1;33886
+19;Yoda;19;3;1;677
+20;Poema de Gilgamesh;20;4;2;35692
+21;Las mil y una noches;21;4;1;11305
+22;Todo se desmorona;22;4;2;17785
+23;Don Quijote de la Manch;23;4;2;47389
+24;Medea;24;4;2;40208
+25;Ilíada;25;4;1;42880
+26;Odisea;26;4;2;15663
+27;Shakuntala;27;4;1;12405
+28;Edipo rey;28;4;1;46987
+29;Nefertiti;29;2;2;40532
+30;El hombre que camina;30;2;1;40581
+31;La Fuente de Duchamp;17;2;2;30222
+32;David de Donatello;25;2;1;6817
+33;Laocoonte;27;2;2;12475
+34;Discóbolo de Mirón;1;2;1;32861
+35;Cisne;3;3;2;32918
+36;Zorros;16;3;1;8333
+37;Totoro;12;3;2;39415
+38;Mono;6;3;2;1272
+39;Familia de pandas;7;3;2;49835
+40;Mantis religiosa;20;3;2;12843
+41;El Grito;20;1;2;41885
+42;El Nacimiento de Venus;15;1;2;10714
+43;Los Fusilamientos del 3 de Mayo;22;1;2;25967
+44;El Dormitorio en Arles;30;1;1;32526
+45;El Jardín de las Delicias;24;1;1;22057
+46;La Escuela de Atenas;21;1;2;45030
+47;Juicio Final;21;1;1;4157
+48;Maja Desnuda;13;1;1;10634
+49;Venus del Espejo;18;1;1;13923
+50;Éxtasis de Santa Teresa de Bernini;1;2;1;7135
+51;Marco Aurelio;18;2;2;673
+52;El Beso de Brancusi;11;2;1;2077
+53;La Gran Ola de Kanagawa;11;1;2;10067
+54;Los Borrachos;25;1;1;44992
+55;Las Hilanderas;6;1;2;43966
+56;Las Señoritas de la Calle Avignon;9;1;1;14036
+57;Lección de Anatomía;3;1;1;17239
+58;Inmaculada;24;1;2;24241
+59;El Hijo del Hombre;3;1;1;26831
+60;La Torre de Babel;22;1;1;23039
+61;La Primavera;3;1;2;17624
+62;American Gothic;7;1;1;39468
+63;La Dama del Armiño;15;1;1;5141
+64;Expulsión del Paraíso;7;1;2;26881
+65;La Anunciación;12;1;2;2755
+66;Cabeza de Medusa;5;1;1;19870
+67;El Carnaval del Arlequín;13;1;2;27723
+68;Dama con Unicornio;21;1;2;21572
+69;La Molendera;30;1;1;21579
+70;El Patizambo;18;1;2;10139
+71;Impresión, Sol Naciente;17;1;1;18830
+72;Liebre Joven;22;1;2;44539
+73;Niños Comiendo Uvas y Melón;21;1;1;42205
