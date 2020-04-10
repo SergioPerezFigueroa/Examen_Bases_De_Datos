@@ -1,0 +1,119 @@
+CREATE SCHEMA examen ;
+
+
+
+CREATE TABLE  examen.Customers (
+    CustomerID	INT NOT NULL PRIMARY KEY ,
+    CustomerName nvarchar(200),	
+    [Address]nvarchar(200),
+    City nvarchar (200),	
+    PostalCode nvarchar(200),
+    Country nvarchar(200)
+)
+
+
+CREATE TABLE examen.Categories(
+    CategoryID  INT NOT NULL  PRIMARY KEY ,
+    CategoryName NVARCHAR(100),
+    [Description] NVARCHAR(MAX)
+)
+
+
+CREATE TABLE  examen.Employees (
+
+    EmployeeID    INT NOT NULL  PRIMARY  KEY ,	
+    EmployeeName   NVARCHAR(200) NOT NULL	,
+    DateOfHire   DATE 
+       
+)
+
+
+CREATE TABLE examen.State (
+
+    StateID  INT NOT NULL  PRIMARY key, 
+    StateName  NVARCHAR(20)   
+
+)
+
+
+CREATE TABLE examen.Suppliers (
+    
+    SupplierID	 INT NOT NULL PRIMARY KEY ,
+    SupplierName  NVARCHAR(200), 	
+    [Address]	NVARCHAR (200),
+    City NVARCHAR (200),
+    PostalCode NVARCHAR (200),
+    Country NVARCHAR (200),
+    Phone NVARCHAR (200)
+)
+
+CREATE TABLE examen.Products (
+
+    ProductID INT NOT NULL PRIMARY KEY , 
+    ProductName	 NVARCHAR(200),
+    SupplierID	INT NOT NULL,
+    CategoryID	INT NOT NULL,
+    StateID INT NOT NULL,
+    Price NUMERIC
+)
+
+ALTER TABLE examen.Products
+ADD CONSTRAINT FK_Proveedor
+FOREIGN KEY (SupplierID)
+REFERENCES examen.Suppliers(SupplierID)
+
+ALTER TABLE examen.Products
+ADD CONSTRAINT FK_Categoria
+FOREIGN KEY (CategoryID)
+REFERENCES examen.Categories(CategoryID)
+
+ALTER TABLE examen.Products
+ADD CONSTRAINT FK_Estado
+FOREIGN KEY  (StateID)
+REFERENCES examen.State(StateID) 
+
+
+CREATE TABLE examen.[Orders] (
+    OrderID  INT NOT NULL  PRIMARY KEY ,	
+    CustomerID	INT NOT NULL,
+    EmployeeID INT NOT NULL,
+    OrderDate	 DATE
+    
+)
+
+
+ALTER TABLE examen.[Orders] 
+ADD CONSTRAINT FK_Clientes
+FOREIGN KEY (CustomerID)
+REFERENCES examen.Customers(CustomerID)
+
+
+ALTER TABLE examen.[Orders] 
+ADD CONSTRAINT FK_Empleados
+FOREIGN KEY (EmployeeID )
+REFERENCES examen.Employees(EmployeeID )
+
+
+
+CREATE TABLE examen.OrderDetails(
+    OrderDetailID	INT NOT NULL PRIMARY KEY ,
+    OrderID INT NOT NULL,
+    ProductID	INT NOT NULL ,
+    [Address]	NVARCHAR (200),
+    FechaInicio	DATE, 
+    FechaFin 	DATE,
+    CantidadPersonas  INT NOT NULL	,
+    CantidadDias  INT NOT NULL
+
+)    
+
+ALTER TABLE examen.OrderDetails
+ADD CONSTRAINT FK_Ordenes1
+FOREIGN KEY (OrderID)
+REFERENCES examen.Orders(OrderID)
+
+ALTER TABLE examen.OrderDetails
+ADD CONSTRAINT FK_Productos1
+FOREIGN KEY (ProductID)
+REFERENCES examen.Products(ProductID)
+
